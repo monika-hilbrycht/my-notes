@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/327a0d490c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <div class="menu">
+        <h1><i class="fas fa-sticky-note"></i> MyNotes</h1>
+
+        <div class="menu-buttons">
+            <button class="add icon"><i class="fas fa-plus"></i> Add</button>
+            <button class="delete-all icon"><i class="fas fa-trash-alt"></i> Delete all</button>
+        </div>
+    </div>
+
+    <div class="note-area">
+
+        <div class="note">
+            <div class="note-header">
+                <h3 class="note-title">Note #1</h3>
+                <button class="delete-note">
+                    <i class="fas fa-times icon"></i>
+                </button>
+            </div>
+            <div class="note-body">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa saepe impedit cum, reprehenderit deserunt repellendus, optio tempora quod quidem, iste corporis sit eos rem iusto nisi aliquam officia facilis quaerat!
+            </div>
+        </div>
+
+    </div>
+
+    <div class="note-panel">
+        <h2>Add a note</h2>
+        <label for="category">Choose a category</label>
+        <select id="category">
+            <option value="0" disabled selected>- choose a category -</option>
+            <option value="1">Shopping</option>
+            <option value="1">Work</option>
+            <option value="1">Others</option>
+        </select>
+
+        <label for="text">Write a note</label>
+        <textarea id="text"></textarea>
+
+        <p class="error">Fill all gaps!</p>
+
+        <div class="panel-buttons">
+            <button class="save icon"><i class="fas fa-save"></i></button>
+            <button class="cancel icon"><i class="fas fa-window-close"></i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
